@@ -1,0 +1,10 @@
+NumList = [12,45,87,49,56,46]print("\nElement Before Sorting is: ", NumList)
+Number=len(NumList)
+
+i = 0while(i < Number):
+    j = i + 1while(j < Number):if(NumList[i] < NumList[j]):
+            temp = NumList[i]
+            NumList[i] = NumList[j]
+            NumList[j] = temp
+j = j + 1
+i = i + 1print("\nElement After Sorting List in Descending Order is: \n", NumList)
